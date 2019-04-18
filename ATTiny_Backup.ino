@@ -4,10 +4,11 @@
 // stores it in the EEPROM.
 
 // This Code is based on a modified version of TinyBME280 Library found here - https://github.com/technoblogy/tiny-bme280
-// It uses TinyWireM instead of the regular Wire library
+// It has to be modifief to use TinyWireM instead of the regular Wire library
 
 // TODO: Everytime the ATTiny reaches the end of the EEPROM it overflows and starts to write it from the beginning
 // erasing previously taken measurements. Implement a stop for that.
+
 // TODO: Add deepsleep after EEPROM is full
 
 #include <TinyWireM.h>
